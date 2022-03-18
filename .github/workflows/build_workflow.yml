@@ -44,7 +44,7 @@ jobs:
                                     "repository":  {
                                         "id": "github",
                                         "snapshots": "true",
-                                        "url": "https://maven.pkg.github.com/OWNER/REPOSITORY"
+                                        "url": "https://maven.pkg.github.com/hundzukani/cicd"
                                     }
                                 }
                             }
