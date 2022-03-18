@@ -21,7 +21,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      steps:
       - uses: s4u/maven-settings-action@v2.5.0
         with:
           servers: |
