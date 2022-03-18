@@ -20,7 +20,7 @@
 		<!-- END COMMON -->
 
 		<!-- JAVA -->
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 		<!-- END JAVA -->
 
 		<maven.compiler.source>${java.version}</maven.compiler.source>
