@@ -26,7 +26,7 @@ jobs:
           servers: |
             [{
               "id": "github",
-              "interactiveMode": "false"
+              "interactiveMode": "false",
               "username": $GITHUB_ACTOR,
               "password": $GITHUB_TOKEN
             }]
