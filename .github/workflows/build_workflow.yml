@@ -46,7 +46,6 @@ jobs:
         run: |
           mvn -v
           mvn -X -B install --file pom.xml -DskipTests
-          mvn -X deploy
           cd /home/runner/.m2/repository
           ls
 
