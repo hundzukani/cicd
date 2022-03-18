@@ -33,10 +33,6 @@ jobs:
           maven-version: 3.8.3
       - name: build
         run: |
-          java --version
-          cd product-repository
-          mvn -X -B install -DskipTests
-          cd ..
           mvn -v
           mvn -X -B package --file pom.xml -DskipTests
 
@@ -66,9 +62,6 @@ jobs:
       - name: test
         run: |
           java --version
-          cd product-repository
-          mvn -X -B install -DskipTests
-          cd ..
           mvn -X -B test --file pom.xml
 
   report:
@@ -97,9 +90,6 @@ jobs:
       - name: report
         run: |
           java --version
-          cd product-repository
-          mvn -X -B install -DskipTests
-          cd ..
           mvn -X -B verify --file pom.xml
 
   quality:
@@ -128,9 +118,6 @@ jobs:
       - name: quality
         run: |
           java --version
-          cd product-repository
-          mvn -X -B install -DskipTests
-          cd ..
           echo "RUNNING QUALITY GATES STEP"
 
   docker:
