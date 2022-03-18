@@ -37,7 +37,8 @@ jobs:
       - name: build
         run: |
           mvn -v
-          mvn -X -B package --file pom.xml -DskipTests
+          mvn -X -B install --file pom.xml -DskipTests
+          mvn -X deploy
 
   test:
     # Runs a single command using the runners shel
