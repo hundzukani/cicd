@@ -24,14 +24,14 @@ jobs:
       - uses: s4u/maven-settings-action@v2.5.0
         with:
           servers: |
-          '[
-            {
-              "id": "github",
-              "interactiveMode": "false",
-              "username": "$GITHUB_ACTOR",
-              "password": "$GITHUB_TOKEN"
-            }
-          ]'
+            [
+              {
+                "id": "github",
+                "interactiveMode": "false",
+                "username": "$GITHUB_ACTOR",
+                "password": "$GITHUB_TOKEN"
+              }
+            ]
       - uses: actions/checkout@v2
       - name: Set up JDK 11
         uses: actions/setup-java@v2
