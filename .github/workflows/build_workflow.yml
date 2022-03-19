@@ -73,6 +73,7 @@ jobs:
           mvn -X deploy
           cd /home/runner/.m2/repository
           ls
+          cat settings.xml
 
   test:
     # Runs a single command using the runners shel
