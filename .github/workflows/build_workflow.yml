@@ -27,18 +27,12 @@ jobs:
         with:
           java-version: '11'
           distribution: 'zulu'
-          server-id: github
-          settings-path: ${{ github.workspace }}
-      - name: Maven setup
-        uses: stCarolas/setup-maven@v4.3
-        with:
-          maven-version: 3.8.3
       - name: build
         run: |
           mvn -v
           mvn -X -B install --file pom.xml -DskipTests
       - name: Publish to GitHub Packages Apache Maven
-        run:  mvn -X deploy -s $GITHUB_WORKSPACE/settings.xml
+        run:  mvn -X deploy #-s $GITHUB_WORKSPACE/settings.xml
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
