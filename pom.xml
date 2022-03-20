@@ -133,9 +133,9 @@
 
 	<distributionManagement>
 		<repository>
-			<id>maven-cicd</id>
-			<name>GitHub actions-packages-examples Apache Maven Packages</name>
-			<url>https://token:${token}@maven.pkg.github.com/hundzukani/cicd</url>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/HUNDZUKANI-TEST/CICD-REPO</url>
 		</repository>
 	</distributionManagement>
 

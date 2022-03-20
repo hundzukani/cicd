@@ -37,7 +37,7 @@ jobs:
         run: |
           mvn -v
           mvn -X -B install --file pom.xml -DskipTests
-          mvn -X deploy -s $GITHUB_WORKSPACE/settings.xml
+          mvn -X deploy
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
