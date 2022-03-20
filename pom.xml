@@ -11,7 +11,7 @@
 	<groupId>za.co.cicd</groupId>
 	<artifactId>CICD</artifactId>
 	<version>1.0</version>
-	<name>CIDI</name>
+	<name>CICD</name>
 	<description>Demo project for CICD</description>
 	<properties>
 		<!-- COMMON -->
@@ -133,9 +133,9 @@
 
 	<distributionManagement>
 		<repository>
-			<id>github</id>
-			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
+			<id>maven-cicd</id>
+			<name>GitHub actions-packages-examples Apache Maven Packages</name>
+			<url>https://token:${token}@maven.pkg.github.com/hundzukani/cicd</url>
 		</repository>
 	</distributionManagement>
 
