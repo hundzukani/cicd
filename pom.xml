@@ -50,7 +50,7 @@
 
 		<!-- JACOCO -->
 		<jacoco.skip>false</jacoco.skip>
-		<jacoco.skip.instrument>false</jacoco.skip.instrument>
+		<jacoco.skip.instrument>true</jacoco.skip.instrument>
 		<jacoco.percentage.complexity>1</jacoco.percentage.complexity>
 		<jacoco.percentage.line>1</jacoco.percentage.line>
 		<jacoco.percentage.branch>1</jacoco.percentage.branch>
