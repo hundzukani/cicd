@@ -49,8 +49,8 @@
 		<!-- END SPRING -->
 
 		<!-- JACOCO -->
-		<jacoco.skip>true</jacoco.skip>
-		<jacoco.skip.instrument>true</jacoco.skip.instrument>
+		<jacoco.skip>false</jacoco.skip>
+		<jacoco.skip.instrument>false</jacoco.skip.instrument>
 		<jacoco.percentage.complexity>1</jacoco.percentage.complexity>
 		<jacoco.percentage.line>1</jacoco.percentage.line>
 		<jacoco.percentage.branch>1</jacoco.percentage.branch>
