@@ -140,6 +140,7 @@
 	</distributionManagement>
 
 	<build>
+		<finalName>CICD</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.liquibase</groupId>
