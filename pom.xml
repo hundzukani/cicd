@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>za.co.cicd</groupId>
-	<artifactId>CICD</artifactId>
+	<artifactId>cicd</artifactId>
 	<version>1.0</version>
 	<name>CICD</name>
 	<description>Demo project for CICD</description>
@@ -129,11 +129,35 @@
 			<version>${lombok.revision}</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-deploy-plugin</artifactId>
+			<version>3.0.0-M2</version>
+		</dependency>
+
+
+
 	</dependencies>
 
+	<repositories>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/hundzukani/CICD</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/hundzukani/CICD</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
-		<finalName>CICD</finalName>
+		<finalName>cicd</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.liquibase</groupId>
