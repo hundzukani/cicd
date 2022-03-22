@@ -17,6 +17,13 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
 			<url>https://maven.pkg.github.com/hundzukani/CICD</url>
 		</repository>
 	</repositories>
@@ -26,6 +33,8 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
+			<layout>default</layout>
+			<uniqueVersion>false</uniqueVersion>
 			<url>https://maven.pkg.github.com/hundzukani/CICD</url>
 		</repository>
 	</distributionManagement>
