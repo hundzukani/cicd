@@ -13,6 +13,23 @@
 	<name>springBootService</name>
 	<description>springBootService</description>
 
+	<repositories>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/hundzukani/CICD</url>
+		</repository>
+	</repositories>
+
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/hundzukani/CICD</url>
+		</repository>
+	</distributionManagement>
+
 	<build>
 		<finalName>springBootService</finalName>
 	</build>
