@@ -1,2 +1,0 @@
-# cicd
-CICD PIPELINE TEST
