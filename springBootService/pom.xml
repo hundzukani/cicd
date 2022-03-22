@@ -8,7 +8,7 @@
 		<version>1.4</version>
 	</parent>
 
-	<artifactId>springBootService</artifactId>
+	<artifactId>springbootservice</artifactId>
 	<packaging>jar</packaging>
 	<name>springBootService</name>
 	<description>springBootService</description>
