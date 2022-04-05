@@ -34,4 +34,5 @@ jobs:
       run: |
         IMAGE_TAG=springBootService:$(date +%s)
         cd springBootService
-        docker build . --file Dockerfile --tag
+        docker build . --file Dockerfile --tag $IMAGE_TAG
+        docker ps
