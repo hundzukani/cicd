@@ -3,7 +3,7 @@
 
 name: Maven Package
 
-on: [workflow_dispatch]
+on: [push]
 
 jobs:
   build:
@@ -26,6 +26,12 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+      run: |
+        mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
+    - name: Build Docker Image
+      run: |
+        IMAGE_TAG=springBootService:$(date +%s)
+        cd springBootService
+        docker build . --file Dockerfile --tag
