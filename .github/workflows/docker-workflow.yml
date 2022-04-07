@@ -8,7 +8,7 @@ on: [push]
 jobs:
   build:
 # https://dev.to/n3wt0n/avoid-duplication-github-actions-reusable-workflows-3ae8
-    uses: hundzukani/cicd/.github/workflows/common-docker-workflow.yml@${GITHUB_REF#refs/heads/}
+    uses: hundzukani/cicd/.github/workflows/common-docker-workflow.yml@${{ github.ref }}
 #    - name: Configure AWS credentials
 #      uses: aws-actions/configure-aws-credentials@v1
 #      with:
