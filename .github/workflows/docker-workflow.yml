@@ -10,6 +10,7 @@ jobs:
     maven:
      uses: hundzukani/cicd/.github/workflows/common-docker-workflow.yml@main
     build:
+      runs-on: ubuntu-latest
       steps:
         - name: Test Command
           run: |
