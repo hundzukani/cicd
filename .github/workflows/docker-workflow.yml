@@ -5,8 +5,6 @@ name: Maven Package
 
 on: [push]
 
-uses: hundzukani/cicd/.github/workflows/common-docker-workflow.yml@main
-
 jobs:
 # https://dev.to/n3wt0n/avoid-duplication-github-actions-reusable-workflows-3ae8
     maven:
