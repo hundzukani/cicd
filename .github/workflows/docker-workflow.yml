@@ -8,8 +8,10 @@ on: [push]
 jobs:
   build:
 # https://dev.to/n3wt0n/avoid-duplication-github-actions-reusable-workflows-3ae8
-    uses: hundzukani/cicd/.github/workflows/common-docker-workflow.yml@main
+
     steps:
+      - name: Checkout Repo
+        uses: hundzukani/cicd/.github/workflows/common-docker-workflow.yml@main
       - name: Test Command
         run: echo "Hello Hundzukani"
 #    - name: Configure AWS credentials
