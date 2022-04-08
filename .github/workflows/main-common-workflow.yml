@@ -3,7 +3,7 @@
 
 name: Maven Package
 
-on: [push]
+on: [workflow_dispatch]
 
 jobs:
 # https://dev.to/n3wt0n/avoid-duplication-github-actions-reusable-workflows-3ae8
