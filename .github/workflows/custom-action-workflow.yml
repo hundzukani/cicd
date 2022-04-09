@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: hundzukani/my-first-action@v3
+        uses: hundzukani/my-first-action@v4
         with:
           who-to-greet: 'Hundzukani Manganyi'
       # Use the output from the `hello` step
