@@ -68,8 +68,8 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
         with:
-          context: ./springBootService
-          file: Dockerfile
+          #context: ./springBootService
+          file: springBootService/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
           tags: cicd:1.0 #${{ steps.meta.outputs.tags }}
           labels: CICD Docker Image #${{ steps.meta.outputs.labels }}
