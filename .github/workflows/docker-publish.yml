@@ -59,8 +59,8 @@ jobs:
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          # use custom value instead of git tag
           tags: |
-            # use custom value instead of git tag
             type=semver,pattern={{version}},value=v1.0.0
 
       # Build and push Docker image with Buildx (don't push on PR)
