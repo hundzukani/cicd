@@ -43,6 +43,11 @@ jobs:
       id-token: write
 
     steps:
+      - run: |
+          echo "Env Name: ${{ github.event.inputs.name }}" 
+          echo "Env Message: ${{ github.event.inputs.message }}"
+          echo "Env Use Emoji: ${{ github.event.inputs.use-emoji }}" 
+          echo "Env environment: ${{ github.event.inputs.environment }}"
       - name: Checkout repository
         uses: actions/checkout@v3
 
