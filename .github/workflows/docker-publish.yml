@@ -5,7 +5,12 @@ name: Docker
 # separate terms of service, privacy policy, and support
 # documentation.
 
-on: [push]
+on push:
+  inputs:
+    environment:
+      description: 'Define env name'
+      required: true
+
 
 env:
   # Use docker.io for Docker Hub if empty
