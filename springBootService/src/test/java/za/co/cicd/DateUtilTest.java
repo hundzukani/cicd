@@ -1,4 +1,4 @@
-package za.co.cidi;
+package za.co.cicd;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
