@@ -26,7 +26,6 @@ jobs:
       run: |
         cd springBootService
         mvn spring-boot:run -DskipTests
-        cd ..
         mvn -B -X verify
 
 
